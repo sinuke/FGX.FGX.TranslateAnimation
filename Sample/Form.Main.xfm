@@ -1,0 +1,32 @@
+object FormMain: TFormMain
+  AlignmentChildren.Direction = ColumnReverse
+  Size.Width = 360.000000000000000000
+  Size.Height = 590.000000000000000000
+  SavedSizeWidth = 360s
+  SavedSizeHeight = 590s
+  object fgButton1: TfgButton
+    Text = 'Start'
+    PositionMode = Relative
+    Position.Y = 512.000000000000000000
+    RelativePosition.Left = 112.000000000000000000
+    RelativePosition.Top = 528.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 78.000000000000000000
+    OnTap = fgButton1Tap
+    SavedSizeWidth = 120s
+    SavedSizeHeight = 78s
+  end
+  object fgCardPanel1: TfgCardPanel
+    CornerRadius = 8.000000000000000000
+    BackgroundColor = claSlateblue
+    Elevation = 8.000000000000000000
+    Position.X = 128.000000000000000000
+    Position.Y = 48.000000000000000000
+    RelativePosition.Left = 128.000000000000000000
+    RelativePosition.Top = 48.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 113.000000000000000000
+    SavedSizeWidth = 121s
+    SavedSizeHeight = 113s
+  end
+end
