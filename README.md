@@ -8,4 +8,5 @@
  - Вызвать метод **TfgTranslateAnimation.Animate**
  
  ### Video:
-![video](https://github.com/sinuke/FGX.FGX.TranslateAnimation/blob/master/video.mp4)
+ ![before animation](https://github.com/sinuke/FGX.ActiveNetworkInfo/blob/master/scr01.png)
+ ![finish animatiion](https://github.com/sinuke/FGX.ActiveNetworkInfo/blob/master/scr02.png)
