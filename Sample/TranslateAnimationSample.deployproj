@@ -141,19 +141,19 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\strings.xml" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>TranslateAnimationSample\res\values\</RemoteDir>
-            <RemoteName>strings.xml</RemoteName>
-            <DeployClass>Android_Strings</DeployClass>
+        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TranslateAnimationSample\res\mipmap-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>TranslateAnimationSample\res\mipmap-hdpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon72</DeployClass>
+        <DeployFile Include="Android\Debug\strings.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TranslateAnimationSample\res\values\</RemoteDir>
+            <RemoteName>strings.xml</RemoteName>
+            <DeployClass>Android_Strings</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -357,16 +357,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\libTranslateAnimationSample.so" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>TranslateAnimationSample\library\lib\armeabi-v7a\</RemoteDir>
-            <RemoteName>libTranslateAnimationSample.so</RemoteName>
-            <DeployClass>ProjectOutput</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-            <Required>True</Required>
-        </DeployFile>
         <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
             <RemoteDir>TranslateAnimationSample\library\lib\mips\</RemoteDir>
             <RemoteName>libTranslateAnimationSample.so</RemoteName>
@@ -448,6 +438,16 @@
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\libTranslateAnimationSample.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TranslateAnimationSample\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libTranslateAnimationSample.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
         </DeployFile>
         <DeployFile Include="$(FGX)\Images\Android\mipmap-hdpi\ic_launcher_round.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>TranslateAnimationSample\res\mipmap-hdpi\</RemoteDir>

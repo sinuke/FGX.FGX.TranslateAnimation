@@ -74,9 +74,11 @@ var
   Listener: TTranslateAnimationListener;
   Animation: TJTranslateAnimation;
   Interpolator: TJAccelerateDecelerateInterpolator;
+  Scale: Single;
 begin
-  View := TfgAndroidControlHandle(AControl.Handle).NativeControl.View;
-  Animation := TJTranslateAnimation.Create(AFromXDelta, AToXDelta, AFromYDelta, AToYDelta);
+  Scale := TfgAndroidHelper.ScreenScale;
+  View := AControl.Handle.View;
+  Animation := TJTranslateAnimation.Create(AFromXDelta * Scale, AToXDelta * Scale, AFromYDelta * Scale, AToYDelta * Scale);
   if ADuration = PlatformDuration then
     Animation.setDuration(TJResources.getSystem.getInteger(TJR_integer.config_shortAnimTime))
   else

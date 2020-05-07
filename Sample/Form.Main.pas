@@ -41,7 +41,7 @@ uses
 
 procedure TFormMain.fgButton1Tap(Sender: TObject);
 begin
-  TfgTranslateAnimation.Animate(fgCardPanel1, 0, 0, 0, 600, 2000, OnFinishAnimation);
+  TfgTranslateAnimation.Animate(fgCardPanel1, 0, 0, 0, 300, 2000, OnFinishAnimation);
 end;
 
 procedure TFormMain.OnFinishAnimation;
