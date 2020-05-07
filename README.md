@@ -8,4 +8,4 @@
  - Вызвать метод **TfgTranslateAnimation.Animate**
  
  ### Video:
-https://github.com/sinuke/FGX.FGX.TranslateAnimation/blob/master/video.mp4
+![video](https://github.com/sinuke/FGX.FGX.TranslateAnimation/blob/master/video.mp4)
