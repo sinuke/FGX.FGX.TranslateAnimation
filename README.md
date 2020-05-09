@@ -8,4 +8,4 @@
  - Вызвать метод **TfgTranslateAnimation.Animate**
  
  ### Sampe:
- ![anim](https://github.com/sinuke/FGX.FGX.TranslateAnimation/blob/master/scr1.png)
+ ![anim](https://github.com/sinuke/FGX.TranslateAnimation/blob/master/anim.gif)
