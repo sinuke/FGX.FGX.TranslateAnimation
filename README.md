@@ -7,6 +7,5 @@
  - Добавить **FGX.TranslateAnimation.pas** в проект FGX Native (**Progect - Add to project**)
  - Вызвать метод **TfgTranslateAnimation.Animate**
  
- ### Screenshots:
- ![before animation](https://github.com/sinuke/FGX.FGX.TranslateAnimation/blob/master/scr1.png)
- ![finish animatiion](https://github.com/sinuke/FGX.FGX.TranslateAnimation/blob/master/scr2.png)
+ ### Sampe:
+ ![anim](https://github.com/sinuke/FGX.FGX.TranslateAnimation/blob/master/scr1.png)
