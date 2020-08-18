@@ -17,9 +17,9 @@ type
     destructor Destroy; override;
 
     {JAnimation_AnimationListener}
-    procedure onAnimationEnd(const AArg0: TJAnimation);
-    procedure onAnimationRepeat(const AArg0: TJAnimation);
-    procedure onAnimationStart(const AArg0: TJAnimation);
+    procedure onAnimationEnd(const AArg0: JAnimation);
+    procedure onAnimationRepeat(const AArg0: JAnimation);
+    procedure onAnimationStart(const AArg0: JAnimation);
   end;
 
   TfgTranslateAnimation = class
@@ -51,17 +51,17 @@ begin
   inherited;
 end;
 
-procedure TTranslateAnimationListener.onAnimationEnd(const AArg0: TJAnimation);
+procedure TTranslateAnimationListener.onAnimationEnd(const AArg0: JAnimation);
 begin
   if Assigned(FFinishCallback) then
     FFinishCallback;
 end;
 
-procedure TTranslateAnimationListener.onAnimationRepeat(const AArg0: TJAnimation);
+procedure TTranslateAnimationListener.onAnimationRepeat(const AArg0: JAnimation);
 begin
 end;
 
-procedure TTranslateAnimationListener.onAnimationStart(const AArg0: TJAnimation);
+procedure TTranslateAnimationListener.onAnimationStart(const AArg0: JAnimation);
 begin
 end;
 
@@ -70,10 +70,10 @@ end;
 class procedure TfgTranslateAnimation.Animate(const AControl: TfgControl; const AFromXDelta, AFromYDelta, AToXDelta,
   AToYDelta: Single; const ADuration: Integer; const AFinishCallback: TfgCallback);
 var
-  View: TJView;
+  View: JView;
   Listener: TTranslateAnimationListener;
-  Animation: TJTranslateAnimation;
-  Interpolator: TJAccelerateDecelerateInterpolator;
+  Animation: JTranslateAnimation;
+  Interpolator: JAccelerateDecelerateInterpolator;
   Scale: Single;
 begin
   Scale := TfgAndroidHelper.ScreenScale;
@@ -102,8 +102,8 @@ begin
   TfgAutoreleasePool.Store(Interpolator);
   TfgAutoreleasePool.Store(Animation);
 
-  Animation.setInterpolator(Interpolator);
-  Animation.setAnimationListener(Listener);
+  Animation.setInterpolator(TJInterpolator.Wrap(Interpolator));
+  Animation.setAnimationListener(TJAnimation_AnimationListener.Wrap(Listener));
 
   View.startAnimation(Animation);
 end;
